@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumenta e diminua do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="m.png" type="image/png">
+        <img src="g.png" alt="imagem flexivel">
+    </picture>
+    <hr>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender  reproduzir áudios em HTML5</p>
+    <audio src="midia/tyrone_spong.mp3" controls autoplay></audio><!--audios compativeis mp3, mpeg, ogg, wav -->
+    <p>esse é outro exemplo segue o passo a passo</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/tyrone_spong.mp3" type="audio/mpeg"><!--caso o navegador não tiver suporte ele vai indicar o de baixo que é baixar somente se não reproduzir OK!!-->
+        <p>infelizmente seu arquivo nao reproduzil</p>
+        <a href="midia/tyrone_spong.mp3">clica aqui para baixar ele</a>
+    </audio>
+    
+</body>
+</html>
